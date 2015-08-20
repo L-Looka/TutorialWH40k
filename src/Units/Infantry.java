@@ -4,9 +4,6 @@ public abstract class Infantry implements SpecialRule
 {
 	private int movement = 6;
 	private int FallBackMove = 2; //number of dice rolled
-	private boolean SlowedByTerrain = true;
-	private boolean DifficultAsDangerous = false;
-	private boolean MoveOverTerrain = false;
 	
 	public int getMovement() {
 		return movement;
@@ -23,20 +20,10 @@ public abstract class Infantry implements SpecialRule
 	public boolean isSlowedByTerrain() {
 		return SlowedByTerrain;
 	}
-	public void setSlowedByTerrain(boolean slowedByTerrain) {
-		SlowedByTerrain = slowedByTerrain;
-	}
 	public boolean isDifficultAsDangerous() {
 		return DifficultAsDangerous;
-	}
-	public void setDifficultAsDangerous(boolean difficultAsDangerous) {
-		DifficultAsDangerous = difficultAsDangerous;
 	}
 	public boolean isMoveOverTerrain() {
 		return MoveOverTerrain;
 	}
-	public void setMoveOverTerrain(boolean moveOverTerrain) {
-		MoveOverTerrain = moveOverTerrain;
-	}
-	
 }

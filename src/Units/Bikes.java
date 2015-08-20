@@ -6,7 +6,6 @@ public abstract class Bikes extends Infantry
 	final private int FallBackMove = 3; //number of dice rolled
 	final private boolean SlowedByTerrain = false;
 	private boolean DifficultAsDangerous = true;
-	private boolean MoveOverTerrain = false;
 	private int TurboBoost = 12;
 	private boolean BikeSwitch = false; //true  will bee a jatbike
 	
@@ -36,9 +35,6 @@ public abstract class Bikes extends Infantry
 	}
 	public boolean isMoveOverTerrain() {
 		return  BikeSwitch? true: false;
-	}
-	public void setMoveOverTerrain(boolean moveOverTerrain) {
-		MoveOverTerrain = moveOverTerrain;
 	}
 	public boolean isHammerOfWrath() {
 		return HammerOfWrath;
